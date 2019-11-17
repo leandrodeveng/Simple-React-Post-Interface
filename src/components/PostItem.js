@@ -4,7 +4,7 @@ import CommentItem from './CommentItem';
 function PostItem ({ post }) {
   return(
   <li key = {post.id}>
-    <ul>
+    <ul id = "postContainer">
       <li>{post.author.name}</li> <br/>
       <li>{post.date}</li>  <br/>
       <li>{post.content}</li> <br/>

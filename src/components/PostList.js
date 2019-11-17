@@ -43,12 +43,12 @@ class PostList extends Component {
 
   render() {
     return (
-      <>
+      <div id = "appContainer">
         <Header />
-        <ul>
+        <ul id = "container">
           {this.state.posts.map(post => <PostItem key = {post} post = {post}/>)}
         </ul>
-      </>
+      </div>
     )
   };
 };
