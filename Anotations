@@ -1,0 +1,77 @@
+#### Configurações de projeto react
+
+--Instalar as ferramentas do Babel e Webpack (Como dependencias de desenvolvimento) 
+  do projeto usando o seguinte comando:
+
+#### yarn add @babel/core @babel/preset-env @babel/preset-react webpack webpack-cli -D
+#### yarn add babel-loader -D
+#### yarn add webpack-dev-server -D
+
+--Instalar React e React Dom usando o seguinte comando:
+
+#### yarn add react react-dom
+
+--Configurar o webpack e o babel:
+
+  -- Criar arquivo de configuração d babel: # babel.config.js 
+    -- Dentro do arquivo criar a seguinte configuração:
+
+    module.exports = {
+      presets: [
+        "@babel/preset-env",      //Transpila tudo do JS que o navegador não entende.
+        "@babel/preset-react"     //Transpila tudo do React que o navegador não entende.
+      ],
+    };
+
+  -- Criar pasta src na raiz da aplicação:
+    --Dentro da pasta criar arquivo index da aplicação: #index.js
+
+  -- Criar pasta public na raiz da aplicação:
+    --O webpack criará dentro dessa pasta um arquivo bundle.js com os códigos da aplicação transpilados.
+    -- Nesse diretório é onde ficará, também, nosso arquivo index.html
+
+
+  -- Criar arquivo de configuração do webpack: # webpack.config.js
+    --Dentro do arquivo criar a seguinte configuração:
+
+      const path = require('path');
+
+      module.exports = {
+        entry: path.resolve(__dirname, 'src', 'index.js'),
+        output: {
+          path: path.resolve(__dirname, 'public'),
+          filename: 'bundle.js'
+        },
+        devServer: {
+          contentBase: path.resolve(__dirname, 'public'),
+        },
+        module: {
+          rules: [
+            {
+              test: /\.js$/,               // carrega todos os arquivos que teminam com .js
+              exclude: /node_modules/,     // desconsidera todos os arquivos de node modules, pois estes já devem etar transpilados pelo criador da lib 
+              use: {
+                loader: 'babel-loader'      
+              }
+            }
+          ]
+        }
+      };
+
+#### Criar comando de build:
+
+  --Entrar no arquivo package.json e criar os seguintes campos:
+
+    "scripts": {
+      "build": "webpack --mode production",
+      "dev": "webpack-dev-server --mode development",
+    }
+
+--- Plugin para que o babel entenda as propriedades dos componentes de classe 
+    sem que precisemos utilizar um constructor.
+    
+####yarn add @babel/plugin-proposal-class-properties -D
+
+--- Loaders de CSS:
+
+####yarn add style-loader css-loader -D
