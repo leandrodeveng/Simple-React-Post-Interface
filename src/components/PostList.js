@@ -18,7 +18,7 @@ class PostList extends Component {
             author: {
               name: "Diego Fernandes",
             },
-            content: "Conteúdo do comentário"
+            content: "Comentariozãoooooooooooooooooooooooooooooo"
           }
         ]
       },{

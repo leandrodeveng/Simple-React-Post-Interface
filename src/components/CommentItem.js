@@ -4,8 +4,8 @@ function CommentItem({ comment }) {
   return(
     <li key = {comment.id}>
       <ul id = "commentContainer">
-        <li>{comment.author.name}</li> <br/>
-        <li>{comment.content}</li> <br/>
+        <li id = "commentName">{comment.author.name}</li> <br/>
+        <li id = "commentContent">{comment.content}</li> <br/>
       </ul>
     </li>
 )};
