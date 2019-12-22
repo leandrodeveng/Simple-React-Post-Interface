@@ -9,6 +9,7 @@ class PostList extends Component {
         id: 1,
         author: {
           name: "Julio Alcantara",
+          avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRjZbNbSavCny0Y9Ztsq43CaTL5kiqv5-meOgOl2ESslHvrrONH"
         },
         date: "04 Jun 2019",
         content: "Pessoal, alguém sabe se a Rocketseat está contratando?",
@@ -17,14 +18,16 @@ class PostList extends Component {
             id: 1,
             author: {
               name: "Diego Fernandes",
+              avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRjZbNbSavCny0Y9Ztsq43CaTL5kiqv5-meOgOl2ESslHvrrONH"
             },
-            content: "Comentariozãoooooooooooooooooooooooooooooo"
+            content: "Comentariozãoooooo"
           }
         ]
       },{
         id: 2,
         author: {
           name: "Leandro Trindade",
+          avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRjZbNbSavCny0Y9Ztsq43CaTL5kiqv5-meOgOl2ESslHvrrONH"
         },
         date: "07 Jun 2019",
         content: "Teste Comment",
@@ -33,6 +36,7 @@ class PostList extends Component {
             id: 2 ,
             author: {
               name: "Diego Fernandes",
+              avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRjZbNbSavCny0Y9Ztsq43CaTL5kiqv5-meOgOl2ESslHvrrONH"
             },
             content: "Conteúdo do comentário"
           }
