@@ -9,6 +9,7 @@ body {
   margin-top: 0px;
 }
 #Header {
+  list-style-type: none;
   background: #3b5998;
   color: white;
   font-family: sans-serif;
@@ -21,7 +22,7 @@ body {
   border-radius: 5px;
   margin: 15px;
   margin-top: 15px;
-  height: 200px;
+  height: 300px;
   padding-top: 17px;
 }
 #commentContainer {
@@ -31,7 +32,6 @@ body {
   width: 80%;
   margin-left: 20px;
   margin-right: auto;  
-  margin-top: 0px;
   display: inline-block;
 }
 #container {
@@ -57,18 +57,26 @@ body {
   color: grey;
   display: inline-block;
 }
-
 #logo {
-  padding-left: 30px;
-  display: inline;
+  list-style-type: none;
+  margin-left: 30px;
   font-size: 25px;
+  float: left;
+  margin-top: 0px;
 }
 #menu {
-  padding-left: 80%;
-  display: inline;
-  font-size: 15px;
+  list-style-type: none;
+  margin-left: 80%;
+  margin-top: 0px;
+  font-size: 12px;
+  float: left;
+  font-weight: bold;
+  float: top;
 }
-
+#menuimg {
+  width: 24px;
+  border-radius: 15px;
+}
 #commentName {
   padding-left: 20px;
   padding-top: 0px;
@@ -99,4 +107,7 @@ body {
 #commentimg {
   width: 30px;
   border-radius: 20px;
+}
+#logoimg {
+  width: 45px;
 }

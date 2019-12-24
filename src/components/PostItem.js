@@ -10,7 +10,7 @@ function PostItem ({ post }) {
       <li id = "date">{post.date}</li>  <br/>
       <li id = "content">{post.content}</li> <br/>
       {post.comments.map(comment => <CommentItem key = {comment} comment = {comment}/>)}
-    </ul>
+    </ul> 
   </li>
 )};
 

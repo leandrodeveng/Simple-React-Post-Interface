@@ -20,7 +20,13 @@ class PostList extends Component {
               name: "Diego Fernandes",
               avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRjZbNbSavCny0Y9Ztsq43CaTL5kiqv5-meOgOl2ESslHvrrONH"
             },
-            content: "Comentariozãoooooo"
+            content: "Comentariozãoooooo",
+            id: 3,
+            author: {
+              name: "Arnold Xuaisnéguer",
+              avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRjZbNbSavCny0Y9Ztsq43CaTL5kiqv5-meOgOl2ESslHvrrONH"
+            },
+            content: "Eu voltarei !",
           }
         ]
       },{
