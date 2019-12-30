@@ -4,13 +4,17 @@ import CommentItem from './CommentItem';
 function PostItem ({ post }) {
   return(
   <li key = {post.id}>
-    <ul id = "postContainer">
-    <li id = "avatar"> <img id = "postimg" src = {post.author.avatar}/> </li>
-      <li id = "author">{post.author.name}</li> <br/>
-      <li id = "date">{post.date}</li>  <br/>
-      <li id = "content">{post.content}</li> <br/>
+    <div id = "postContainer">
+      <div>
+        <img id = "postimg" src = {post.author.avatar}/>
+        <div id = "div2">  
+          <p id = "author">{post.author.name} </p>
+          <p id = "date">{post.date}</p>
+        </div>
+      </div>
+      <p id = "content">{post.content}</p>
       {post.comments.map(comment => <CommentItem key = {comment} comment = {comment}/>)}
-    </ul> 
+    </div> 
   </li>
 )};
 
